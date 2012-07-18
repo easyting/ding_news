@@ -115,13 +115,7 @@ function ding_news_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '7',
-        ),
-        'full' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '6',
+          'weight' => '11',
         ),
         'search_result' => array(
           'label' => 'above',
@@ -133,7 +127,7 @@ function ding_news_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '6',
+          'weight' => '11',
         ),
         'teaser_highlight' => array(
           'label' => 'above',
@@ -157,7 +151,7 @@ function ding_news_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'taxonomy_autocomplete',
-        'weight' => '6',
+        'weight' => '7',
       ),
     ),
   );
@@ -203,23 +197,15 @@ function ding_news_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'taxonomy',
           'settings' => array(),
-          'type' => 'taxonomy_term_reference_link',
-          'weight' => '4',
-        ),
-        'full' => array(
-          'label' => 'above',
-          'module' => 'taxonomy',
-          'settings' => array(),
-          'type' => 'taxonomy_term_reference_link',
-          'weight' => '4',
+          'type' => 'hidden',
+          'weight' => '9',
         ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '5',
+          'weight' => '10',
         ),
         'teaser_highlight' => array(
           'label' => 'above',
@@ -282,14 +268,7 @@ function ding_news_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '1',
-        ),
-        'full' => array(
-          'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => '1',
+          'weight' => '0',
         ),
         'search_result' => array(
           'label' => 'above',
@@ -304,7 +283,7 @@ function ding_news_field_default_fields() {
             'trim_length' => '60',
           ),
           'type' => 'text_summary_or_trimmed',
-          'weight' => '2',
+          'weight' => '1',
         ),
         'teaser_highlight' => array(
           'label' => 'hidden',
@@ -334,85 +313,6 @@ function ding_news_field_default_fields() {
         ),
         'type' => 'text_textarea_with_summary',
         'weight' => '1',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-ding_news-field_display'
-  $fields['node-ding_news-field_display'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_display',
-      'foreign keys' => array(),
-      'indexes' => array(
-        'value' => array(
-          0 => 'value',
-        ),
-      ),
-      'module' => 'list',
-      'settings' => array(
-        'allowed_values' => array(
-          0 => 'No',
-          1 => 'Yes',
-        ),
-        'allowed_values_function' => '',
-      ),
-      'translatable' => '0',
-      'type' => 'list_boolean',
-    ),
-    'field_instance' => array(
-      'bundle' => 'ding_news',
-      'default_value' => array(
-        0 => array(
-          'value' => 0,
-        ),
-      ),
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '5',
-        ),
-        'full' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '7',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser_highlight' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_display',
-      'label' => 'Show in carousel',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(
-          'display_label' => 1,
-        ),
-        'type' => 'options_onoff',
-        'weight' => '10',
       ),
     ),
   );
@@ -455,13 +355,7 @@ function ding_news_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '6',
-        ),
-        'full' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '5',
+          'weight' => '10',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -543,29 +437,15 @@ function ding_news_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'image',
-          'settings' => array(
-            'image_link' => '',
-            'image_style' => 'ding_content_main_image',
-          ),
-          'type' => 'image',
-          'weight' => '0',
-        ),
-        'full' => array(
-          'label' => 'hidden',
-          'module' => 'image',
-          'settings' => array(
-            'image_link' => '',
-            'image_style' => 'ding_content_main_image',
-          ),
-          'type' => 'image',
-          'weight' => '0',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '6',
         ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '4',
+          'weight' => '9',
         ),
         'teaser_highlight' => array(
           'label' => 'hidden',
@@ -627,27 +507,15 @@ function ding_news_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'ting_reference',
-          'settings' => array(
-            'view_mode' => 'teaser',
-          ),
-          'type' => 'ting_reference_default',
-          'weight' => '2',
-        ),
-        'full' => array(
-          'label' => 'above',
-          'module' => 'ting_reference',
-          'settings' => array(
-            'view_mode' => 'collection_list',
-          ),
-          'type' => 'ting_reference_default',
-          'weight' => '2',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '7',
         ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '3',
+          'weight' => '8',
         ),
         'teaser_highlight' => array(
           'label' => 'above',
@@ -708,17 +576,9 @@ function ding_news_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'og',
           'settings' => array(),
-          'type' => 'og_list_default',
-          'weight' => '3',
-        ),
-        'full' => array(
-          'label' => 'hidden',
-          'module' => 'og',
-          'settings' => array(),
-          'type' => 'og_list_default',
-          'weight' => '3',
+          'type' => 'hidden',
+          'weight' => '8',
         ),
         'search_result' => array(
           'label' => 'above',
@@ -728,10 +588,9 @@ function ding_news_field_default_fields() {
         ),
         'teaser' => array(
           'label' => 'hidden',
-          'module' => 'og',
           'settings' => array(),
-          'type' => 'og_list_default',
-          'weight' => '1',
+          'type' => 'hidden',
+          'weight' => '3',
         ),
         'teaser_highlight' => array(
           'label' => 'hidden',
@@ -756,7 +615,7 @@ function ding_news_field_default_fields() {
           'opt_group' => 'auto',
         ),
         'type' => 'ding_content_group_audience_library',
-        'weight' => '7',
+        'weight' => '8',
       ),
     ),
   );
@@ -770,7 +629,6 @@ function ding_news_field_default_fields() {
   t('List image');
   t('Main image');
   t('Materials');
-  t('Show in carousel');
   t('Tags');
 
   return $fields;
