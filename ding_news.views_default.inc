@@ -702,7 +702,7 @@ function ding_news_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Editorial base */
+  /* Field: Content: Section */
   $handler->display->display_options['fields']['field_editorial_base_n']['id'] = 'field_editorial_base_n';
   $handler->display->display_options['fields']['field_editorial_base_n']['table'] = 'field_data_field_editorial_base_n';
   $handler->display->display_options['fields']['field_editorial_base_n']['field'] = 'field_editorial_base_n';
@@ -1029,7 +1029,7 @@ function ding_news_views_default_views() {
   $handler->display->display_options['fields']['ding_content_tags']['delta_reversed'] = 0;
   $handler->display->display_options['fields']['ding_content_tags']['delta_first_last'] = 0;
   $handler->display->display_options['fields']['ding_content_tags']['field_api_classes'] = 0;
-  /* Field: Content: Editorial base */
+  /* Field: Content: Section */
   $handler->display->display_options['fields']['field_editorial_base_n']['id'] = 'field_editorial_base_n';
   $handler->display->display_options['fields']['field_editorial_base_n']['table'] = 'field_data_field_editorial_base_n';
   $handler->display->display_options['fields']['field_editorial_base_n']['field'] = 'field_editorial_base_n';
@@ -1120,7 +1120,7 @@ function ding_news_views_default_views() {
     t('Material type'),
     t('Type'),
     t('Tags'),
-    t('Editorial base'),
+    t('Section'),
   );
   $export['ding_news'] = $view;
 
