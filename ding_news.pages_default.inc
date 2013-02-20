@@ -311,11 +311,9 @@ function ding_news_default_page_manager_pages() {
     'contexts' => array(),
     'relationships' => array(),
     'panels_breadcrumbs_state' => 1,
-    'panels_breadcrumbs_titles' => 'Home
-News
+    'panels_breadcrumbs_titles' => 'News
 %tid:name',
-    'panels_breadcrumbs_paths' => '<front>
-news
+    'panels_breadcrumbs_paths' => 'news
 news/%tid:name',
   );
   $display = new panels_display;
