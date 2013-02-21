@@ -87,7 +87,7 @@ function ding_news_default_page_manager_handlers() {
     'panels_breadcrumbs_state' => 1,
     'panels_breadcrumbs_titles' => 'News
 %node:title',
-    'panels_breadcrumbs_paths' => 'news
+    'panels_breadcrumbs_paths' => '<none>
 <none>',
   );
   $display = new panels_display;
@@ -313,7 +313,7 @@ function ding_news_default_page_manager_pages() {
     'panels_breadcrumbs_state' => 1,
     'panels_breadcrumbs_titles' => 'News
 %tid:name',
-    'panels_breadcrumbs_paths' => 'news
+    'panels_breadcrumbs_paths' => '<none>
 news/%tid:name',
   );
   $display = new panels_display;
