@@ -115,9 +115,10 @@ function ding_news_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
+          'module' => 'taxonomy',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '11',
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => '8',
         ),
         'full' => array(
           'label' => 'above',
@@ -206,15 +207,17 @@ function ding_news_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
+          'module' => 'taxonomy',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '9',
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => '2',
         ),
         'full' => array(
           'label' => 'above',
+          'module' => 'taxonomy',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '9',
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -380,7 +383,7 @@ function ding_news_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '10',
+          'weight' => '11',
         ),
         'full' => array(
           'label' => 'above',
@@ -393,7 +396,7 @@ function ding_news_field_default_fields() {
           'module' => 'image',
           'settings' => array(
             'image_link' => 'content',
-            'image_style' => 'square_thumbnail',
+            'image_style' => 'ding_halbib_taxonomy',
           ),
           'type' => 'image',
           'weight' => '0',
@@ -491,7 +494,7 @@ function ding_news_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '6',
+          'weight' => '8',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -571,7 +574,7 @@ function ding_news_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '7',
+          'weight' => '9',
         ),
         'full' => array(
           'label' => 'above',
@@ -647,13 +650,13 @@ function ding_news_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '8',
+          'weight' => '10',
         ),
         'full' => array(
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '8',
+          'weight' => '9',
         ),
         'search_result' => array(
           'label' => 'above',
