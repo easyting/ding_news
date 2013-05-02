@@ -132,10 +132,11 @@ function ding_news_field_default_fields() {
           'weight' => 0,
         ),
         'teaser' => array(
-          'label' => 'above',
+          'label' => 'inline',
+          'module' => 'taxonomy',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '11',
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => '3',
         ),
         'teaser_highlight' => array(
           'label' => 'above',
@@ -217,10 +218,11 @@ function ding_news_field_default_fields() {
           'weight' => '9',
         ),
         'teaser' => array(
-          'label' => 'above',
+          'label' => 'inline',
+          'module' => 'taxonomy',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '10',
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => '2',
         ),
         'teaser_highlight' => array(
           'label' => 'above',
@@ -303,7 +305,7 @@ function ding_news_field_default_fields() {
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
-            'trim_length' => '60',
+            'trim_length' => '150',
           ),
           'type' => 'text_summary_or_trimmed',
           'weight' => '1',
@@ -493,7 +495,7 @@ function ding_news_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '9',
+          'weight' => '11',
         ),
         'teaser_highlight' => array(
           'label' => 'hidden',
@@ -579,7 +581,7 @@ function ding_news_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '8',
+          'weight' => '10',
         ),
         'teaser_highlight' => array(
           'label' => 'above',
@@ -661,7 +663,7 @@ function ding_news_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '3',
+          'weight' => '5',
         ),
         'teaser_highlight' => array(
           'label' => 'hidden',
