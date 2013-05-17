@@ -35,9 +35,9 @@ function ding_news_views_api() {
 function ding_news_node_info() {
   $items = array(
     'ding_news' => array(
-      'name' => t('News'),
+      'name' => t('Nyheder'),
       'base' => 'node_content',
-      'description' => t('A content type for news concerning libraries.'),
+      'description' => t('Nyheder vises kronologisk på forsider og nyhedslister'),
       'has_title' => '1',
       'title_label' => t('Titel'),
       'help' => '',
