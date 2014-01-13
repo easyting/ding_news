@@ -363,79 +363,6 @@ function ding_news_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-ding_news-field_ding_item_list'.
-  $fields['node-ding_news-field_ding_item_list'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_ding_item_list',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'ding_item_list_field',
-      'settings' => array(
-        'profile2_private' => FALSE,
-      ),
-      'translatable' => '0',
-      'type' => 'ding_item_list_field',
-    ),
-    'field_instance' => array(
-      'bundle' => 'ding_news',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'ding_item_list_field',
-          'settings' => array(),
-          'type' => 'ding_item_list_field_default',
-          'weight' => 13,
-        ),
-        'full' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'related_category_items' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser_highlight' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_ding_item_list',
-      'label' => 'Ding item list',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'ding_item_list_field',
-        'settings' => array(),
-        'type' => 'ding_item_list_field_search_form',
-        'weight' => '7',
-      ),
-    ),
-  );
-
   // Exported field: 'node-ding_news-field_list_image'.
   $fields['node-ding_news-field_list_image'] = array(
     'field_config' => array(
@@ -751,11 +678,9 @@ function ding_news_field_default_fields() {
   t('Body');
   t('Category');
   t('Comment');
-  t('Ding item list');
   t('Library');
   t('List image');
   t('Main image');
-  t('Materials');
   t('Tags');
 
   return $fields;
